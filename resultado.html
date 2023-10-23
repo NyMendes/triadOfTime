@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="assets/style.css" />
+    <title>Resultado</title>
+  </head>
+  <body>
+    <div class="bg-fundo">
+      <div class="resultado">
+        <span class="text-result">Seu resultado:</span>
+        <div class="resposta">
+          <div class="legenda">
+            <div class="text">
+              <span class="circulo" id="altA"></span>
+              <div class="desc">
+                <h2>Importante</h2>
+                <p>
+                  Está diretamente relacionada às atividades que nós realizamos
+                  e que são relevantes em nossas vidas.
+                  <a href="conjuntoA.html" target="_blank">Saiba mais... </a>
+                </p>
+              </div>
+            </div>
+            <div class="text">
+              <span class="circulo" id="altB"></span>
+              <div class="desc">
+                <h2>Urgente</h2>
+                <p>
+                  Esta esfera abrange todas as atividades para as quais o tempo
+                  está curto, no limite ou já se esgotou.
+                  <a href="conjuntoA.html" target="_blank">Saiba mais... </a>
+                </p>
+              </div>
+            </div>
+
+            <div class="text">
+              <span class="circulo" id="altC"></span>
+              <div class="desc">
+                <h2>Circunstancial</h2>
+                <p>
+                  Diz respeito às atividades desnecessárias, por serem
+                  consideradas apropriadas pela sociedade, excessivas ou sem
+                  resultados.
+                  <a href="conjuntoA.html" target="_blank">Saiba mais... </a>
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="grafico">
+            <img src="assets/img/grafico.png" alt="" />
+          </div>
+        </div>
+        <div class="box-btt">
+          <a href="index.html">
+            <button class="transition-all btt-iniciar">
+              <span>Recomeçar</span>
+            </button>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      document.getElementById('altA').innerHTML = localStorage.getItem('exibeA')
+      document.getElementById('altB').innerHTML = localStorage.getItem('exibeB')
+      document.getElementById('altC').innerHTML = localStorage.getItem('exibeC')
+    </script>
+  </body>
+</html>

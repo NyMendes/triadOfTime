@@ -1,0 +1,1475 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <link rel="stylesheet" href="assets/style.css">
+ <link rel="stylesheet" href="assets/swiper-bundle.min.css" />
+
+ <title>Teste</title>
+</head>
+<body>
+ <div class="bg-fundo">
+   <div class="quiz">
+   <div class="swiper mySwiper">
+    <form action ="resposta.php" method="post" id="questionnaireForm" class="swiper-wrapper">
+      <div id="question1 " class="swiper-slide conteudo"> 
+          <div class="pergunta">
+            <h2 class="text-pergunta"> Costumo ir a eventos, festas ou cursos, mesmo sem ter muita vontade, para agradar meu chefe meus amigos ou família. </h2>
+          </div>
+          <div class="options">
+              <div class="caption text--positivo">Sempre</div>
+              <div class="radios">
+                  <label class="t-opcoes" for="um-um">
+                    <input 
+                    aria-label="Sempre" 
+                    aria-busy="false" 
+                    id="um-um" 
+                    class="alt" 
+                    name="alt1" 
+                    type="radio" 
+                    tabindex="-1" 
+                    value="5" >
+                    <span class="radio-style size70 positivo "> </span>
+                  </label>
+                  <label class="t-opcoes" for="um-dois">
+                    <input 
+                    aria-label="Quase Sempre" 
+                    aria-busy="false" 
+                    id="um-dois" 
+                    class="alt" 
+                    name="alt1"  
+                    type="radio" 
+                    tabindex="-1" 
+                    value="4" >
+                    <span class="radio-style size56 positivo ">  </span>
+                  </label>
+                  <label class="t-opcoes" for="um-tres">
+                    <input  
+                    aria-label="Ás Vezes" 
+                    aria-busy="false" 
+                    data-focus-first="true" 
+                    id="um-tres" 
+                    class="alt" 
+                    name="alt1"  
+                    type="radio" 
+                    tabindex="0" 
+                    value="3">
+                    <span class="radio-style size36 neutro" >  </span>
+                  </label>
+                  <label class="t-opcoes" for="um-quatro">
+                    <input 
+                    aria-label="Raramente" 
+                    aria-busy="false" 
+                    id="um-quatro" 
+                    class="alt" 
+                    name="alt1" 
+                    type="radio" 
+                    tabindex="-1" 
+                    value="2" >
+                    <span class="radio-style size56 negativo" ></span>
+                  </label>
+                  <label class="t-opcoes" for="um-cinco">
+                    <input  
+                    aria-label="Nunca" 
+                    aria-busy="false" 
+                    id="um-cinco" 
+                    class="alt" 
+                    name="alt1" 
+                    type="radio" 
+                    tabindex="-1" 
+                    value="1"  
+                    required="">
+                    <span class="radio-style size70 negativo" > </span>
+                  </label>
+              </div>
+              <div class="caption  text--negativo">Nunca</div>
+              <div class="mobile">
+                <div class="caption-mobile text--positivo">
+                Sempre</div>
+                <div class="caption-mobile  text--negativo">
+                Nunca</div> 
+              </div>
+          </div>
+      </div>
+      <div id="question2" class="swiper-slide conteudo">
+          <div class="pergunta">
+            <h2 class="text-pergunta"> Não consigo realizar tudo que me propus fazer no dia e preciso fazer hora extra e levar trabalho para casa. </h2>
+          </div>
+          <div class="options">
+          <div class="caption text--positivo">Sempre</div>
+           <div class="radios">
+                  <label class="t-opcoes" for="dois-um">
+                    <input 
+                    aria-label="Sempre" 
+                    aria-busy="false" 
+                    id="dois-um" 
+                    class="alt" 
+                    name="alt2" 
+                    type="radio" 
+                    tabindex="-1" 
+                    value="5" >
+                    <span class="radio-style size70 positivo "> </span>
+                  </label>
+                  <label class="t-opcoes" for="dois-dois">
+                    <input 
+                    aria-label="Quase Sempre" 
+                    aria-busy="false" 
+                    id="dois-dois" 
+                    class="alt" 
+                    name="alt2"  
+                    type="radio" 
+                    tabindex="-1" 
+                    value="4" >
+                    <span class="radio-style size56 positivo ">  </span>
+                  </label>
+                  
+                  <label class="t-opcoes" for="dois-quatro">
+                    <input  
+                    aria-label="Ás Vezes" 
+                    aria-busy="false" 
+                    data-focus-first="true" 
+                    id="dois-quatro" 
+                    class="alt" 
+                    name="alt2"  
+                    type="radio" 
+                    tabindex="0" 
+                    value="3">
+                    <span class="radio-style size36 neutro" >  </span>
+                  </label>
+
+                  <label class="t-opcoes" for="dois-seis">
+                    <input 
+                    aria-label="Raramente" 
+                    aria-busy="false" 
+                    id="dois-seis" 
+                    class="alt" 
+                    name="alt2" 
+                    type="radio" 
+                    tabindex="-1" 
+                    value="2" >
+                    <span class="radio-style size56 negativo" ></span>
+                  </label>
+                  
+                  <label class="t-opcoes" for="dois-sete">
+                    <input  
+                    aria-label="Nunca" 
+                    aria-busy="false" 
+                    id="dois-sete" 
+                    class="alt" 
+                    name="alt2" 
+                    type="radio" 
+                    tabindex="-1" 
+                    value="1"  
+                    required="">
+                    <span class="radio-style size70 negativo" > </span>
+                  </label>
+              </div>
+          <div class="caption  text--negativo">Nunca</div>
+          <div class="mobile">
+            <div class="caption-mobile text--positivo">
+            Sempre</div>
+            <div class="caption-mobile  text--negativo">
+            Nunca</div>
+          </div>
+          </div>
+      </div>
+      <div id="question3" class="swiper-slide conteudo">
+          <div class="pergunta">
+            <h2 class="text-pergunta"> Quando recebo um novo e-mail, costumo dar uma olhada para checar o conteúdo. </h2>
+          </div>
+          <div class="options">
+          <div  class="caption text--positivo">Sempre</div>
+          <div class="radios">
+            <label class="t-opcoes" for="tres-um">
+              <input 
+              aria-label="Sempre" 
+              aria-busy="false" 
+              id="tres-um" 
+              class="alt" 
+              name="alt3" 
+              type="radio" 
+              tabindex="-1" 
+              value="5" >
+              <span class="radio-style size70 positivo "> </span>
+            </label>
+            <label class="t-opcoes" for="tres-dois">
+              <input 
+              aria-label="Quase Sempre" 
+              aria-busy="false" 
+              id="tres-dois" 
+              class="alt" 
+              name="alt3"  
+              type="radio" 
+              tabindex="-1" 
+              value="4" >
+              <span class="radio-style size56 positivo ">  </span>
+            </label>
+            <label class="t-opcoes" for="tres-tres">
+              <input  
+              aria-label="Ás Vezes" 
+              aria-busy="false" 
+              data-focus-first="true" 
+              id="tres-tres" 
+              class="alt" 
+              name="alt3"  
+              type="radio" 
+              tabindex="0" 
+              value="3">
+              <span class="radio-style size36 neutro" >  </span>
+            </label>
+            <label class="t-opcoes" for="tres-quatro">
+              <input 
+              aria-label="Raramente" 
+              aria-busy="false" 
+              id="tres-quatro" 
+              class="alt" 
+              name="alt3" 
+              type="radio" 
+              tabindex="-1" 
+              value="2" >
+              <span class="radio-style size56 negativo" ></span>
+            </label>
+            <label class="t-opcoes" for="tres-cinco">
+              <input  
+              aria-label="Nunca" 
+              aria-busy="false" 
+              id="tres-cinco" 
+              class="alt" 
+              name="alt3" 
+              type="radio" 
+              tabindex="-1" 
+              value="1"  
+              required="">
+              <span class="radio-style size70 negativo" > </span>
+            </label>
+          </div>
+          <div class="caption  text--negativo">Nunca</div>
+          <div class="mobile">
+            <div class="caption-mobile text--positivo">
+            Sempre</div>
+            <div class="caption-mobile  text--negativo">
+            Nunca</div>
+          </div>
+          </div>
+      </div>
+      <div id="question4" class="swiper-slide conteudo">
+          <div class="pergunta">
+            <h2 class="text-pergunta"> Costumo visitar com regularidade pessoas relevantes em minha vida como amigos parentes, filhos.  </h2>
+          </div>
+          <div class="options">
+          <div class="caption text--positivo">Sempre</div>
+          <div class="radios">
+            <label class="t-opcoes" for="quatro-um">
+              <input 
+              aria-label="Sempre" 
+              aria-busy="false" 
+              id="quatro-um" 
+              class="alt" 
+              name="alt4" 
+              type="radio" 
+              tabindex="-1" 
+              value="5" >
+              <span class="radio-style size70 positivo "> </span>
+            </label>
+            <label class="t-opcoes" for="quatro-dois">
+              <input 
+              aria-label="Quase Sempre" 
+              aria-busy="false" 
+              id="quatro-dois" 
+              class="alt" 
+              name="alt4"  
+              type="radio" 
+              tabindex="-1" 
+              value="4" >
+              <span class="radio-style size56 positivo ">  </span>
+            </label>
+            <label class="t-opcoes" for="quatro-tres">
+              <input  
+              aria-label="Ás Vezes" 
+              aria-busy="false" 
+              data-focus-first="true" 
+              id="quatro-tres" 
+              class="alt" 
+              name="alt4"  
+              type="radio" 
+              tabindex="0" 
+              value="3">
+              <span class="radio-style size36 neutro" >  </span>
+            </label>
+            <label class="t-opcoes" for="quatro-quatro">
+              <input 
+              aria-label="Raramente" 
+              aria-busy="false" 
+              id="quatro-quatro" 
+              class="alt" 
+              name="alt4" 
+              type="radio" 
+              tabindex="-1" 
+              value="2" >
+              <span class="radio-style size56 negativo" ></span>
+            </label>
+            <label class="t-opcoes" for="quatro-cinco">
+              <input  
+              aria-label="Nunca" 
+              aria-busy="false" 
+              id="quatro-cinco" 
+              class="alt" 
+              name="alt4" 
+              type="radio" 
+              tabindex="-1" 
+              value="1"  
+              required="">
+              <span class="radio-style size70 negativo" > </span>
+            </label>
+          </div>
+          <div class="caption  text--negativo">Nunca</div>
+          <div class="mobile">
+            <div class="caption-mobile text--positivo">
+            Sempre</div>
+            <div class="caption-mobile  text--negativo">
+            Nunca</div>
+          </div>
+          </div>
+      </div>
+      <div id="question5" class="swiper-slide conteudo">
+          <div class="pergunta">
+            <h2 class="text-pergunta">É comum aparecer problemas inesperados no meu dia a dia. </h2>
+          </div>
+          <div class="options">
+          <div class="caption text--positivo">Sempre</div>
+          <div class="radios">
+            <label class="t-opcoes" for="cinco-um">
+              <input 
+              aria-label="Sempre" 
+              aria-busy="false" 
+              id="cinco-um" 
+              class="alt" 
+              name="alt5" 
+              type="radio" 
+              tabindex="-1" 
+              value="5" >
+              <span class="radio-style size70 positivo "> </span>
+            </label>
+            <label class="t-opcoes" for="cinco-dois">
+              <input 
+              aria-label="Quase Sempre" 
+              aria-busy="false" 
+              id="cinco-dois" 
+              class="alt" 
+              name="alt5"  
+              type="radio" 
+              tabindex="-1" 
+              value="4" >
+              <span class="radio-style size56 positivo ">  </span>
+            </label>
+            <label class="t-opcoes" for="cinco-tres">
+              <input  
+              aria-label="Ás Vezes" 
+              aria-busy="false" 
+              data-focus-first="true" 
+              id="cinco-tres" 
+              class="alt" 
+              name="alt5"  
+              type="radio" 
+              tabindex="0" 
+              value="3">
+              <span class="radio-style size36 neutro" >  </span>
+            </label>
+            <label class="t-opcoes" for="cinco-quatro">
+              <input 
+              aria-label="Raramente" 
+              aria-busy="false" 
+              id="cinco-quatro" 
+              class="alt" 
+              name="alt5" 
+              type="radio" 
+              tabindex="-1" 
+              value="2" >
+              <span class="radio-style size56 negativo" ></span>
+            </label>
+            <label class="t-opcoes" for="cinco-cinco">
+              <input  
+              aria-label="Nunca" 
+              aria-busy="false" 
+              id="cinco-cinco" 
+              class="alt" 
+              name="alt5" 
+              type="radio" 
+              tabindex="-1" 
+              value="1"  
+              required="">
+              <span class="radio-style size70 negativo" > </span>
+            </label>
+          </div>
+          <div class="caption  text--negativo">Nunca</div>
+          <div class="mobile">
+            <div class="caption-mobile text--positivo">
+            Sempre</div>
+            <div class="caption-mobile  text--negativo">
+            Nunca</div>
+          </div>
+          </div>
+      </div>
+      <div id="question6" class="swiper-slide conteudo"> 
+          <div class="pergunta">
+            <h2 class="text-pergunta"> Assumo compromissos com outras pessoas ou aceito novas posições na empresa, mesmo que não goste muito da nova atividade, se for para aumentar meus rendimentos ou obter uma promoção.  </h2>
+          </div>
+          <div class="options">
+              <div class="caption text--positivo">Sempre</div>
+              <div class="radios">
+                <label class="t-opcoes" for="seis-um">
+                  <input 
+                  aria-label="Sempre" 
+                  aria-busy="false" 
+                  id="seis-um" 
+                  class="alt" 
+                  name="alt6" 
+                  type="radio" 
+                  tabindex="-1" 
+                  value="5" >
+                  <span class="radio-style size70 positivo "> </span>
+                </label>
+                <label class="t-opcoes" for="seis-dois">
+                  <input 
+                  aria-label="Quase Sempre" 
+                  aria-busy="false" 
+                  id="seis-dois" 
+                  class="alt" 
+                  name="alt6"  
+                  type="radio" 
+                  tabindex="-1" 
+                  value="4" >
+                  <span class="radio-style size56 positivo ">  </span>
+                </label>
+                <label class="t-opcoes" for="seis-tres">
+                  <input  
+                  aria-label="Ás Vezes" 
+                  aria-busy="false" 
+                  data-focus-first="true" 
+                  id="seis-tres" 
+                  class="alt" 
+                  name="alt6"  
+                  type="radio" 
+                  tabindex="0" 
+                  value="3">
+                  <span class="radio-style size36 neutro" >  </span>
+                </label>
+                <label class="t-opcoes" for="seis-quatro">
+                  <input 
+                  aria-label="Raramente" 
+                  aria-busy="false" 
+                  id="seis-quatro" 
+                  class="alt" 
+                  name="alt6" 
+                  type="radio" 
+                  tabindex="-1" 
+                  value="2" >
+                  <span class="radio-style size56 negativo" ></span>
+                </label>
+                <label class="t-opcoes" for="seis-cinco">
+                  <input  
+                  aria-label="Nunca" 
+                  aria-busy="false" 
+                  id="seis-cinco" 
+                  class="alt" 
+                  name="alt6" 
+                  type="radio" 
+                  tabindex="-1" 
+                  value="1"  
+                  required="">
+                  <span class="radio-style size70 negativo" > </span>
+                </label>
+              </div>
+              <div class="caption  text--negativo">Nunca</div>
+              <div class="mobile">
+                <div class="caption-mobile text--positivo">
+                Sempre</div>
+                <div class="caption-mobile  text--negativo">
+                Nunca</div> 
+              </div>
+          </div>
+      </div>
+      <div id="question7" class="swiper-slide conteudo">
+          <div class="pergunta">
+            <h2 class="text-pergunta"> Tenho um tempo definido para dedicar a mim mesmo e nele, posso fazer o que quiser. </h2>
+          </div>
+          <div class="options">
+          <div class="caption text--positivo">Sempre</div>
+          <div class="radios">
+            <label class="t-opcoes" for="sete-um">
+              <input 
+              aria-label="Sempre" 
+              aria-busy="false" 
+              id="sete-um" 
+              class="alt" 
+              name="alt7" 
+              type="radio" 
+              tabindex="-1" 
+              value="5" >
+              <span class="radio-style size70 positivo "> </span>
+            </label>
+            <label class="t-opcoes" for="sete-dois">
+              <input 
+              aria-label="Quase Sempre" 
+              aria-busy="false" 
+              id="sete-dois" 
+              class="alt" 
+              name="alt7"  
+              type="radio" 
+              tabindex="-1" 
+              value="4" >
+              <span class="radio-style size56 positivo ">  </span>
+            </label>
+            <label class="t-opcoes" for="sete-tres">
+              <input  
+              aria-label="Ás Vezes" 
+              aria-busy="false" 
+              data-focus-first="true" 
+              id="sete-tres" 
+              class="alt" 
+              name="alt7"  
+              type="radio" 
+              tabindex="0" 
+              value="3">
+              <span class="radio-style size36 neutro" >  </span>
+            </label>
+            <label class="t-opcoes" for="sete-quatro">
+              <input 
+              aria-label="Raramente" 
+              aria-busy="false" 
+              id="sete-quatro" 
+              class="alt" 
+              name="alt7" 
+              type="radio" 
+              tabindex="-1" 
+              value="2" >
+              <span class="radio-style size56 negativo" ></span>
+            </label>
+            <label class="t-opcoes" for="sete-cinco">
+              <input  
+              aria-label="Nunca" 
+              aria-busy="false" 
+              id="sete-cinco" 
+              class="alt" 
+              name="alt7" 
+              type="radio" 
+              tabindex="-1" 
+              value="1"  
+              required="">
+              <span class="radio-style size70 negativo" > </span>
+            </label>
+          </div>
+          <div class="caption  text--negativo">Nunca</div>
+          <div class="mobile">
+            <div class="caption-mobile text--positivo">
+            Sempre</div>
+            <div class="caption-mobile  text--negativo">
+            Nunca</div>
+          </div>
+          </div>
+      </div>
+      <div id="question8" class="swiper-slide conteudo">
+          <div class="pergunta">
+            <h2 class="text-pergunta"> Costumo deixar para fazer relatórios, imposto de renda, compras de Natal, estudar para provas e outras tarefas perto do prazo de entrega.  </h2>
+          </div>
+          <div class="options">
+          <div  class="caption text--positivo">Sempre</div>
+          <div class="radios">
+            <label class="t-opcoes" for="oito-um">
+              <input 
+              aria-label="Sempre" 
+              aria-busy="false" 
+              id="oito-um" 
+              class="alt" 
+              name="alt8" 
+              type="radio" 
+              tabindex="-1" 
+              value="5" >
+              <span class="radio-style size70 positivo "> </span>
+            </label>
+            <label class="t-opcoes" for="oito-dois">
+              <input 
+              aria-label="Quase Vezes" 
+              aria-busy="false" 
+              id="oito-dois" 
+              class="alt" 
+              name="alt8"  
+              type="radio" 
+              tabindex="-1" 
+              value="4" >
+              <span class="radio-style size56 positivo ">  </span>
+            </label>
+            <label class="t-opcoes" for="oito-tres">
+              <input  
+              aria-label="Ás Sempre" 
+              aria-busy="false" 
+              data-focus-first="true" 
+              id="oito-tres" 
+              class="alt" 
+              name="alt8"  
+              type="radio" 
+              tabindex="0" 
+              value="3">
+              <span class="radio-style size36 neutro" >  </span>
+            </label>
+            <label class="t-opcoes" for="oito-quatro">
+              <input 
+              aria-label="Raramente" 
+              aria-busy="false" 
+              id="oito-quatro" 
+              class="alt" 
+              name="alt8" 
+              type="radio" 
+              tabindex="-1" 
+              value="2" >
+              <span class="radio-style size56 negativo" ></span>
+            </label>
+            <label class="t-opcoes" for="oito-cinco">
+              <input  
+              aria-label="Nunca" 
+              aria-busy="false" 
+              id="oito-cinco" 
+              class="alt" 
+              name="alt8" 
+              type="radio" 
+              tabindex="-1" 
+              value="1"  
+              required="">
+              <span class="radio-style size70 negativo" > </span>
+            </label>
+          </div>
+          <div class="caption  text--negativo">Nunca</div>
+          <div class="mobile">
+            <div class="caption-mobile text--positivo">
+            Sempre</div>
+            <div class="caption-mobile  text--negativo">
+            Nunca</div>
+          </div>
+          </div>
+      </div>
+      <div id="question9" class="swiper-slide conteudo">
+          <div class="pergunta">
+            <h2 class="text-pergunta"> Nos dias de descanso, costumo passar boa parte do dia assistindo à televisão, jogando ou acessando a internet.  </h2>
+          </div>
+          <div class="options">
+          <div class="caption text--positivo">Sempre</div>
+          <div class="radios">
+            <label class="t-opcoes" for="nove-um">
+              <input 
+              aria-label="Sempre" 
+              aria-busy="false" 
+              id="nove-um" 
+              class="alt" 
+              name="alt9" 
+              type="radio" 
+              tabindex="-1" 
+              value="5" >
+              <span class="radio-style size70 positivo "> </span>
+            </label>
+            <label class="t-opcoes" for="nove-dois">
+              <input 
+              aria-label="Quase Sempre" 
+              aria-busy="false" 
+              id="nove-dois" 
+              class="alt" 
+              name="alt9"  
+              type="radio" 
+              tabindex="-1" 
+              value="4" >
+              <span class="radio-style size56 positivo ">  </span>
+            </label>
+            <label class="t-opcoes" for="nove-tres">
+              <input  
+              aria-label="Ás Vezes" 
+              aria-busy="false" 
+              data-focus-first="true" 
+              id="nove-tres" 
+              class="alt" 
+              name="alt9"  
+              type="radio" 
+              tabindex="0" 
+              value="3">
+              <span class="radio-style size36 neutro" >  </span>
+            </label>
+            <label class="t-opcoes" for="nove-quatro">
+              <input 
+              aria-label="Raramente" 
+              aria-busy="false" 
+              id="nove-quatro" 
+              class="alt" 
+              name="alt9" 
+              type="radio" 
+              tabindex="-1" 
+              value="2" >
+              <span class="radio-style size56 negativo" ></span>
+            </label>
+            <label class="t-opcoes" for="nove-cinco">
+              <input  
+              aria-label="Nunca" 
+              aria-busy="false" 
+              id="nove-cinco" 
+              class="alt" 
+              name="alt9" 
+              type="radio" 
+              tabindex="-1" 
+              value="1"  
+              required="">
+              <span class="radio-style size70 negativo" > </span>
+            </label>
+          </div>
+          <div class="caption  text--negativo">Nunca</div>
+          <div class="mobile">
+            <div class="caption-mobile text--positivo">
+            Sempre</div>
+            <div class="caption-mobile  text--negativo">
+            Nunca</div>
+          </div>
+          </div>
+      </div>
+      <div id="question10" class="swiper-slide conteudo">
+          <div class="pergunta">
+            <h2 class="text-pergunta"> Faço um planejamento por escrito de tudo que preciso fazer durante minha semana.  </h2>
+          </div>
+          <div class="options">
+          <div class="caption text--positivo">Sempre</div>
+          <div class="radios">
+            <label class="t-opcoes" for="dez-um">
+              <input 
+              aria-label="Sempre" 
+              aria-busy="false" 
+              id="dez-um" 
+              class="alt" 
+              name="alt10" 
+              type="radio" 
+              tabindex="-1" 
+              value="5" >
+              <span class="radio-style size70 positivo "> </span>
+            </label>
+            <label class="t-opcoes" for="dez-dois">
+              <input 
+              aria-label="Quase Sempre" 
+              aria-busy="false" 
+              id="dez-dois" 
+              class="alt" 
+              name="alt10"  
+              type="radio" 
+              tabindex="-1" 
+              value="4" >
+              <span class="radio-style size56 positivo ">  </span>
+            </label>
+            <label class="t-opcoes" for="dez-tres">
+              <input  
+              aria-label="Ás Vezes" 
+              aria-busy="false" 
+              data-focus-first="true" 
+              id="dez-tres" 
+              class="alt" 
+              name="alt10"  
+              type="radio" 
+              tabindex="0" 
+              value="3">
+              <span class="radio-style size36 neutro" >  </span>
+            </label>
+            <label class="t-opcoes" for="dez-quatro">
+              <input 
+              aria-label="Raramente" 
+              aria-busy="false" 
+              id="dez-quatro" 
+              class="alt" 
+              name="alt10" 
+              type="radio" 
+              tabindex="-1" 
+              value="2" >
+              <span class="radio-style size56 negativo" ></span>
+            </label>
+            <label class="t-opcoes" for="dez-cinco">
+              <input  
+              aria-label="Nunca" 
+              aria-busy="false" 
+              id="dez-cinco" 
+              class="alt" 
+              name="alt10" 
+              type="radio" 
+              tabindex="-1" 
+              value="1"  
+              required="">
+              <span class="radio-style size70 negativo" > </span>
+            </label>
+          </div>
+          <div class="caption  text--negativo">Nunca</div>
+          <div class="mobile">
+            <div class="caption-mobile text--positivo">
+            Sempre</div>
+            <div class="caption-mobile  text--negativo">
+            Nunca</div>
+          </div>
+          </div>
+      </div>
+      <div id="question11" class="swiper-slide conteudo"> 
+          <div class="pergunta">
+            <h2 class="text-pergunta"> Posso afirmar que estou conseguindo realizar tudo que gostaria em minha vida e que o tempo está passando na realidade correta.  </h2>
+          </div>
+          <div class="options">
+              <div class="caption text--positivo">Sempre</div>
+              <div class="radios">
+                <label class="t-opcoes" for="onze-um">
+                  <input 
+                  aria-label="Sempre" 
+                  aria-busy="false" 
+                  id="onze-um" 
+                  class="alt" 
+                  name="alt11" 
+                  type="radio" 
+                  tabindex="-1" 
+                  value="5" >
+                  <span class="radio-style size70 positivo "> </span>
+                </label>
+                <label class="t-opcoes" for="onze-dois">
+                  <input 
+                  aria-label="Quase Sempre" 
+                  aria-busy="false" 
+                  id="onze-dois" 
+                  class="alt" 
+                  name="alt11"  
+                  type="radio" 
+                  tabindex="-1" 
+                  value="4" >
+                  <span class="radio-style size56 positivo ">  </span>
+                </label>
+                <label class="t-opcoes" for="onze-tres">
+                  <input  
+                  aria-label="Ás Vezes" 
+                  aria-busy="false" 
+                  data-focus-first="true" 
+                  id="onze-tres" 
+                  class="alt" 
+                  name="alt11"  
+                  type="radio" 
+                  tabindex="0" 
+                  value="3">
+                  <span class="radio-style size36 neutro" >  </span>
+                </label>
+                <label class="t-opcoes" for="onze-quatro">
+                  <input 
+                  aria-label="Raramente" 
+                  aria-busy="false" 
+                  id="onze-quatro" 
+                  class="alt" 
+                  name="alt11" 
+                  type="radio" 
+                  tabindex="-1" 
+                  value="2" >
+                  <span class="radio-style size56 negativo" ></span>
+                </label>
+                <label class="t-opcoes" for="onze-cinco">
+                  <input  
+                  aria-label="Nunca" 
+                  aria-busy="false" 
+                  id="onze-cinco" 
+                  class="alt" 
+                  name="alt11" 
+                  type="radio" 
+                  tabindex="-1" 
+                  value="1"  
+                  required="">
+                  <span class="radio-style size70 negativo" > </span>
+                </label>
+              </div>
+              <div class="caption  text--negativo">Nunca</div>
+              <div class="mobile">
+                <div class="caption-mobile text--positivo">
+                Sempre</div>
+                <div class="caption-mobile  text--negativo">
+                Nunca</div> 
+              </div>
+          </div>
+      </div>
+      <div id="question12" class="swiper-slide conteudo">
+          <div class="pergunta">
+            <h2 class="text-pergunta"> Costumo participar de reuniões sem saber direito o conteúdo, o porquê devo participar ou a que resultado aquele encontro pode levar.  </h2>
+          </div>
+          <div class="options">
+          <div class="caption text--positivo">Sempre</div>
+          <div class="radios">
+            <label class="t-opcoes" for="doze-um">
+              <input 
+              aria-label="Sempre" 
+              aria-busy="false" 
+              id="doze-um" 
+              class="alt" 
+              name="alt12" 
+              type="radio" 
+              tabindex="-1" 
+              value="5" >
+              <span class="radio-style size70 positivo "> </span>
+            </label>
+            <label class="t-opcoes" for="doze-dois">
+              <input 
+              aria-label="Quase Sempre" 
+              aria-busy="false" 
+              id="doze-dois" 
+              class="alt" 
+              name="alt12"  
+              type="radio" 
+              tabindex="-1" 
+              value="4" >
+              <span class="radio-style size56 positivo ">  </span>
+            </label>
+            <label class="t-opcoes" for="doze-tres">
+              <input  
+              aria-label="Ás Vezes" 
+              aria-busy="false" 
+              data-focus-first="true" 
+              id="doze-tres" 
+              class="alt" 
+              name="alt12"  
+              type="radio" 
+              tabindex="0" 
+              value="3">
+              <span class="radio-style size36 neutro" >  </span>
+            </label>
+            <label class="t-opcoes" for="doze-quatro">
+              <input 
+              aria-label="Raramente" 
+              aria-busy="false" 
+              id="doze-quatro" 
+              class="alt" 
+              name="alt12" 
+              type="radio" 
+              tabindex="-1" 
+              value="2" >
+              <span class="radio-style size56 negativo" ></span>
+            </label>
+            <label class="t-opcoes" for="doze-cinco">
+              <input  
+              aria-label="Nunca" 
+              aria-busy="false" 
+              id="doze-cinco" 
+              class="alt" 
+              name="alt12" 
+              type="radio" 
+              tabindex="-1" 
+              value="1"  
+              required="">
+              <span class="radio-style size70 negativo" > </span>
+            </label>
+          </div>
+          <div class="caption  text--negativo">Nunca</div>
+          <div class="mobile">
+            <div class="caption-mobile text--positivo">
+            Sempre</div>
+            <div class="caption-mobile  text--negativo">
+            Nunca</div>
+          </div>
+          </div>
+      </div>
+      <div id="question13" class="swiper-slide conteudo">
+          <div class="pergunta">
+            <h2 class="text-pergunta"> Consigo melhores resultados e me sinto mais produtivo quando estou sob pressão ou com o prazo curto.  </h2>
+          </div>
+          <div class="options">
+          <div  class="caption text--positivo">Sempre</div>
+          <div class="radios">
+            <label class="t-opcoes" for="treze-um">
+              <input 
+              aria-label="Sempre" 
+              aria-busy="false" 
+              id="treze-um" 
+              class="alt" 
+              name="alt13" 
+              type="radio" 
+              tabindex="-1" 
+              value="5" >
+              <span class="radio-style size70 positivo "> </span>
+            </label>
+            <label class="t-opcoes" for="treze-dois">
+              <input 
+              aria-label="Quase Sempre" 
+              aria-busy="false" 
+              id="treze-dois" 
+              class="alt" 
+              name="alt13"  
+              type="radio" 
+              tabindex="-1" 
+              value="4" >
+              <span class="radio-style size56 positivo ">  </span>
+            </label>
+            <label class="t-opcoes" for="treze-tres">
+              <input  
+              aria-label="Ás Vezes" 
+              aria-busy="false" 
+              data-focus-first="true" 
+              id="treze-tres" 
+              class="alt" 
+              name="alt13"  
+              type="radio" 
+              tabindex="0" 
+              value="3">
+              <span class="radio-style size36 neutro" >  </span>
+            </label>
+            <label class="t-opcoes" for="treze-quatro">
+              <input 
+              aria-label="Raramente" 
+              aria-busy="false" 
+              id="treze-quatro" 
+              class="alt" 
+              name="alt13" 
+              type="radio" 
+              tabindex="-1" 
+              value="2" >
+              <span class="radio-style size56 negativo" ></span>
+            </label>
+            <label class="t-opcoes" for="treze-cinco">
+              <input  
+              aria-label="Nunca" 
+              aria-busy="false" 
+              id="treze-cinco" 
+              class="alt" 
+              name="alt13" 
+              type="radio" 
+              tabindex="-1" 
+              value="1"  
+              required="">
+              <span class="radio-style size70 negativo" > </span>
+            </label>
+          </div>
+          <div class="caption  text--negativo">Nunca</div>
+          <div class="mobile">
+            <div class="caption-mobile text--positivo">
+            Sempre</div>
+            <div class="caption-mobile  text--negativo">
+            Nunca</div>
+          </div>
+          </div>
+      </div>
+      <div id="question14" class="swiper-slide conteudo">
+          <div class="pergunta">
+            <h2 class="text-pergunta"> Quando quero alguma coisa, defino esse objetivo por escrito, estabeleço prazos em minha agenda, monitoro os resultados obtidos e os comparo com os esperados.  </h2>
+          </div>
+          <div class="options">
+          <div class="caption text--positivo">Sempre</div>
+          <div class="radios">
+            <label class="t-opcoes" for="catorze-um">
+              <input 
+              aria-label="Sempre" 
+              aria-busy="false" 
+              id="catorze-um" 
+              class="alt" 
+              name="alt14" 
+              type="radio" 
+              tabindex="-1" 
+              value="5" >
+              <span class="radio-style size70 positivo "> </span>
+            </label>
+            <label class="t-opcoes" for="catorze-dois">
+              <input 
+              aria-label="Quase Sempre" 
+              aria-busy="false" 
+              id="catorze-dois" 
+              class="alt" 
+              name="alt14"  
+              type="radio" 
+              tabindex="-1" 
+              value="4" >
+              <span class="radio-style size56 positivo ">  </span>
+            </label>
+            <label class="t-opcoes" for="catorze-tres">
+              <input  
+              aria-label="Ás Vezes" 
+              aria-busy="false" 
+              data-focus-first="true" 
+              id="catorze-tres" 
+              class="alt" 
+              name="alt14"  
+              type="radio" 
+              tabindex="0" 
+              value="3">
+              <span class="radio-style size36 neutro" >  </span>
+            </label>
+            <label class="t-opcoes" for="catorze-quatro">
+              <input 
+              aria-label="Raramente" 
+              aria-busy="false" 
+              id="catorze-quatro" 
+              class="alt" 
+              name="alt14" 
+              type="radio" 
+              tabindex="-1" 
+              value="2" >
+              <span class="radio-style size56 negativo" ></span>
+            </label>
+            <label class="t-opcoes" for="catorze-cinco">
+              <input  
+              aria-label="Nunca" 
+              aria-busy="false" 
+              id="catorze-cinco" 
+              class="alt" 
+              name="alt14" 
+              type="radio" 
+              tabindex="-1" 
+              value="1"  
+              required="">
+              <span class="radio-style size70 negativo" > </span>
+            </label>
+          </div>
+          <div class="caption  text--negativo">Nunca</div>
+          <div class="mobile">
+            <div class="caption-mobile text--positivo">
+            Sempre</div>
+            <div class="caption-mobile  text--negativo">
+            Nunca</div>
+          </div>
+          </div>
+      </div>
+      <div id="question15" class="swiper-slide conteudo">
+          <div class="pergunta">
+            <h2 class="text-pergunta"> Leio muitos e-mails desnecessários, com piadas, correntes, propagandas, apresentações, produtos e etc.  </h2>
+          </div>
+          <div class="options">
+          <div class="caption text--positivo">Sempre</div>
+          <div class="radios">
+            <label class="t-opcoes" for="quinze-um">
+              <input 
+              aria-label="Sempre" 
+              aria-busy="false" 
+              id="quinze-um" 
+              class="alt" 
+              name="alt15" 
+              type="radio" 
+              tabindex="-1" 
+              value="5" >
+              <span class="radio-style size70 positivo "> </span>
+            </label>
+            <label class="t-opcoes" for="quinze-dois">
+              <input 
+              aria-label="Quase Sempre" 
+              aria-busy="false" 
+              id="quinze-dois" 
+              class="alt" 
+              name="alt15"  
+              type="radio" 
+              tabindex="-1" 
+              value="4" >
+              <span class="radio-style size56 positivo ">  </span>
+            </label>
+            <label class="t-opcoes" for="quinze-tres">
+              <input  
+              aria-label="Ás Vezes" 
+              aria-busy="false" 
+              data-focus-first="true" 
+              id="quinze-tres" 
+              class="alt" 
+              name="alt15"  
+              type="radio" 
+              tabindex="0" 
+              value="3">
+              <span class="radio-style size36 neutro" >  </span>
+            </label>
+            <label class="t-opcoes" for="quinze-quatro">
+              <input 
+              aria-label="Raramente" 
+              aria-busy="false" 
+              id="quinze-quatro" 
+              class="alt" 
+              name="alt15" 
+              type="radio" 
+              tabindex="-1" 
+              value="2" >
+              <span class="radio-style size56 negativo" ></span>
+            </label>
+            <label class="t-opcoes" for="quinze-cinco">
+              <input  
+              aria-label="Nunca" 
+              aria-busy="false" 
+              id="quinze-cinco" 
+              class="alt" 
+              name="alt15" 
+              type="radio" 
+              tabindex="-1" 
+              value="1"  
+              required="">
+              <span class="radio-style size70 negativo" > </span>
+            </label>
+          </div>
+          <div class="caption  text--negativo">Nunca</div>
+          <div class="mobile">
+            <div class="caption-mobile text--positivo">
+            Sempre</div>
+            <div class="caption-mobile  text--negativo">
+            Nunca</div>
+          </div>
+          </div>
+      </div>
+      <div id="question16" class="swiper-slide conteudo"> 
+        <div class="pergunta">
+          <h2 class="text-pergunta"> Estive atrasado com minhas tarefas ou reuniões nas últimas semanas.  </h2>
+        </div>
+        <div class="options">
+            <div class="caption text--positivo">Sempre</div>
+            <div class="radios">
+              <label class="t-opcoes" for="dezesseis-um">
+                <input 
+                aria-label="Sempre" 
+                aria-busy="false" 
+                id="dezesseis-um" 
+                class="alt" 
+                name="alt16" 
+                type="radio" 
+                tabindex="-1" 
+                value="5" >
+                <span class="radio-style size70 positivo "> </span>
+              </label>
+              <label class="t-opcoes" for="dezesseis-dois">
+                <input 
+                aria-label="Quase Sempre" 
+                aria-busy="false" 
+                id="dezesseis-dois" 
+                class="alt" 
+                name="alt16"  
+                type="radio" 
+                tabindex="-1" 
+                value="4" >
+                <span class="radio-style size56 positivo ">  </span>
+              </label>
+              <label class="t-opcoes" for="dezesseis-tres">
+                <input  
+                aria-label="Ás Vezes" 
+                aria-busy="false" 
+                data-focus-first="true" 
+                id="dezesseis-tres" 
+                class="alt" 
+                name="alt16"  
+                type="radio" 
+                tabindex="0" 
+                value="3">
+                <span class="radio-style size36 neutro" >  </span>
+              </label>
+              <label class="t-opcoes" for="dezesseis-quatro">
+                <input 
+                aria-label="Raramente" 
+                aria-busy="false" 
+                id="dezesseis-quatro" 
+                class="alt" 
+                name="alt16" 
+                type="radio" 
+                tabindex="-1" 
+                value="2" >
+                <span class="radio-style size56 negativo" ></span>
+              </label>
+              <label class="t-opcoes" for="dezesseis-cinco">
+                <input  
+                aria-label="Nunca" 
+                aria-busy="false" 
+                id="dezesseis-cinco" 
+                class="alt" 
+                name="alt16" 
+                type="radio" 
+                tabindex="-1" 
+                value="1"  
+                required="">
+                <span class="radio-style size70 negativo" > </span>
+              </label>
+            </div>
+            <div class="caption  text--negativo">Nunca</div>
+            <div class="mobile">
+              <div class="caption-mobile text--positivo">
+              Sempre</div>
+              <div class="caption-mobile  text--negativo">
+              Nunca</div> 
+            </div>
+        </div>
+      </div>
+      <div id="question17" class="swiper-slide conteudo">
+          <div class="pergunta">
+            <h2 class="text-pergunta"> Faço esporte com regularidade, me alimento da forma adequada e tenho o lazer que gostaria. </h2>
+          </div>
+          <div class="options">
+          <div class="caption text--positivo">Sempre</div>
+          <div class="radios">
+            <label class="t-opcoes" for="dezessete-um">
+              <input 
+              aria-label="Sempre" 
+              aria-busy="false" 
+              id="dezessete-um" 
+              class="alt" 
+              name="alt18" 
+              type="radio" 
+              tabindex="-1" 
+              value="5" >
+              <span class="radio-style size70 positivo "> </span>
+            </label>
+            <label class="t-opcoes" for="dezessete-dois">
+              <input 
+              aria-label="Quase Sempre" 
+              aria-busy="false" 
+              id="dezessete-dois" 
+              class="alt" 
+              name="alt18"  
+              type="radio" 
+              tabindex="-1" 
+              value="4" >
+              <span class="radio-style size56 positivo ">  </span>
+            </label>
+            <label class="t-opcoes" for="dezessete-tres">
+              <input  
+              aria-label="Ás Sempre" 
+              aria-busy="false" 
+              data-focus-first="true" 
+              id="dezessete-tres" 
+              class="alt" 
+              name="alt18"  
+              type="radio" 
+              tabindex="0" 
+              value="3">
+              <span class="radio-style size36 neutro" >  </span>
+            </label>
+            <label class="t-opcoes" for="dezessete-quatro">
+              <input 
+              aria-label="Raramente" 
+              aria-busy="false" 
+              id="dezessete-quatro" 
+              class="alt" 
+              name="alt18" 
+              type="radio" 
+              tabindex="-1" 
+              value="2" >
+              <span class="radio-style size56 negativo" ></span>
+            </label>
+            <label class="t-opcoes" for="dezessete-cinco">
+              <input  
+              aria-label="Nunca" 
+              aria-busy="false" 
+              id="dezessete-cinco" 
+              class="alt" 
+              name="alt18" 
+              type="radio" 
+              tabindex="-1" 
+              value="1"  
+              required="">
+              <span class="radio-style size70 negativo" > </span>
+            </label>
+          </div>
+          <div class="caption  text--negativo">Nunca</div>
+          <div class="mobile">
+            <div class="caption-mobile text--positivo">
+            Sempre</div>
+            <div class="caption-mobile  text--negativo">
+            Nunca</div>
+          </div>
+          </div>
+      </div>
+      <div id="question18" class="swiper-slide conteudo">
+          <div class="pergunta">
+            <h2 class="text-pergunta">É comum reduzir meu horário de almoço ou até mesmo comer enquanto trabalho para concluir um projeto ou tarefa. </h2>
+          </div>
+          <div class="options">
+          <div  class="caption text--positivo">Sempre</div>
+          <div class="radios">
+            <label class="t-opcoes" for="dezoito-um">
+              <input 
+              aria-label="Sempre" 
+              aria-busy="false" 
+              id="dezoito-um" 
+              class="alt" 
+              name="alt18" 
+              type="radio" 
+              tabindex="-1" 
+              value="5" >
+              <span class="radio-style size70 positivo "> </span>
+            </label>
+            <label class="t-opcoes" for="dezoito-dois">
+              <input 
+              aria-label="Quase Sempre" 
+              aria-busy="false" 
+              id="dezoito-dois" 
+              class="alt" 
+              name="alt18"  
+              type="radio" 
+              tabindex="-1" 
+              value="4" >
+              <span class="radio-style size56 positivo ">  </span>
+            </label>
+            <label class="t-opcoes" for="dezoito-tres">
+              <input  
+              aria-label="Ás Sempre" 
+              aria-busy="false" 
+              data-focus-first="true" 
+              id="dezoito-tres" 
+              class="alt" 
+              name="alt18"  
+              type="radio" 
+              tabindex="0" 
+              value="3">
+              <span class="radio-style size36 neutro" >  </span>
+            </label>
+            <label class="t-opcoes" for="dezoito-quatro">
+              <input 
+              aria-label="Raramente" 
+              aria-busy="false" 
+              id="dezoito-quatro" 
+              class="alt" 
+              name="alt18" 
+              type="radio" 
+              tabindex="-1" 
+              value="2" >
+              <span class="radio-style size56 negativo" ></span>
+            </label>
+            <label class="t-opcoes" for="dezoito-cinco">
+              <input  
+              aria-label="Nunca" 
+              aria-busy="false" 
+              id="dezoito-cinco" 
+              class="alt" 
+              name="alt18" 
+              type="radio" 
+              tabindex="-1" 
+              value="1"  
+              required="">
+              <span class="radio-style size70 negativo" > </span>
+            </label>
+          </div>
+          <div class="caption  text--negativo">Nunca</div>
+          <div class="mobile">
+            <div class="caption-mobile text--positivo">
+            Sempre</div>
+            <div class="caption-mobile  text--negativo">
+            Nunca</div>
+          </div>
+          </div>
+      </div>
+    </form>
+    <div class="group-btt">
+      <button class="swiper-button-prev btt "><span>Voltar</span>
+      </button>
+      <button class="swiper-button-next btt ">Pular
+      </button>
+      <a href="resultado.html" class="result disagree"><input  onclick="calculateResults()" type="button" id="btn" value="Resultado" class="btt " ></a>
+     
+    </div>
+    
+    </button>
+    <div class="swiper-pagination "></div>
+    </div>
+   </div>
+ </div>
+
+ 
+</div>
+ <script src="assets/script.js"></script>
+ <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+
+  <script>
+    var swiper = new Swiper(".mySwiper", {
+      pagination: {
+        el: ".swiper-pagination",
+        type: "progressbar",
+      },
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+    });
+  </script>
+</body>
+</html>
